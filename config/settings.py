@@ -59,6 +59,8 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 
+CORS_ALLOWED_ORIGINS = "*",
+
 CORS_ALLOWED_ORIGINS = [
 "https://domain.com",
 "https://api.domain.com",
@@ -77,6 +79,12 @@ CORS_ALLOW_HEADERS = [
 'user-agent',
 'x-csrftoken',
 'x-requested-with',
+'Access-Control-Allow-Private-Network',
+'Access-Control-Allow-Methods',
+'Access-Control-Allow-Headers',
+'Access-Control-Allow-Origin',
+'Access-Control-Allow-Credentials',
+'X-CSRF-Token',
 ]
 
 CORS_ALLOW_METHODS = [
